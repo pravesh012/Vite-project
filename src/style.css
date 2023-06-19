@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+
+    height: 2em;
+    background-color: rgb(54, 53, 53);   
+    border: 1px solid Yellow;
+}
+.parent-lists-wrapper{
+    margin-top: 5px;
+    display: flex;
+    align-content: center;
+    border:1px solid blue;
+    
+}
+/* below selects all its child */
+.parent-lists-wrapper li:nth-child(1) {
+    /* Styles for the first <li> element within .parent-lists-wrapper */
+    color:red;
+}
