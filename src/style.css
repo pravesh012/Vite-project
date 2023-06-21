@@ -2,22 +2,99 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(54, 53, 53) ;
 }
 nav{
-
+    width: 100vw;
+    position: relative;
+    bottom:6px;
     height: 2em;
-    background-color: rgb(54, 53, 53);   
-    border: 1px solid Yellow;
+    
+    
+    
 }
+
+
 .parent-lists-wrapper{
     margin-top: 5px;
     display: flex;
     align-content: center;
-    border:1px solid blue;
+    list-style-type: none;
+    margin-left:6px;
     
 }
-/* below selects all its child */
+
+
+
 .parent-lists-wrapper li:nth-child(1) {
-    /* Styles for the first <li> element within .parent-lists-wrapper */
-    color:red;
+    margin-right: 1rem;
+}
+.parent-lists-wrapper li:nth-child(3){
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+.parent-lists-wrapper li:nth-child(5){
+    
+    margin-right: 1em;
+    margin-left:10px;
+    }
+    .parent-lists-wrapper li:nth-child(6){
+        
+        margin-right: 10px;
+    }
+
+main{
+    position: relative;
+    bottom:5px;
+    border: 1px solid red;
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns:20% 80%;
+    
+}
+
+.main-content{
+    margin: 0 ;
+    
+    background-color: rgb(39, 37, 37) ;
+}
+
+
+
+
+
+@media screen and (max-width:433px) {
+    
+    .nav-span-li{
+        display: none;
+        
+    }
+    /* both of these nav-span hides the content, if needs to be modified change its display value */
+    .nav-span-li2{
+        display: none;
+
+    }
+    main{
+        grid-template-columns:30% 60%;
+    }
+    
+    
+}   /* this media is for hiding the nav text when max-width is 443 or smaller */
+
+
+@media screen  and (min-width:966px){
+    main{
+        grid-template-columns: 15% 85%;
+        
+    }   
+    
+        
+}
+@media screen and (max-width:748px){
+    main{
+        grid-template-columns: 30% 70%;
+        
+    } 
 }
